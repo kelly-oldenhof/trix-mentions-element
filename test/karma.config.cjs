@@ -4,7 +4,7 @@ module.exports = function (config) {
   config.set({
     frameworks: ['mocha', 'chai'],
     files: [
-      { pattern: '../node_modules/trix/dist/trix.js', type: 'js' },
+      { pattern: '../node_modules/trix/dist/trix.umd.js', type: 'js' },
       { pattern: '../dist/bundle.js', type: 'module' },
       { pattern: '../build/test.js', type: 'module' }
     ],
