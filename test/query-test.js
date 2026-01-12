@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import query from '../dist/query'
 
 describe('trix-mentions single word parsing', function () {

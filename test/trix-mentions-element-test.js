@@ -174,12 +174,12 @@ describe('trix-mentions element', function () {
         await waitForAnimationFrame()
 
         assert.equal(option1.getAttribute('aria-selected'), 'true')
-        assert.equal(option2.getAttribute('aria-selected'), 'false')
+        assert.equal(option2.getAttribute('aria-selected'), null)
 
         triggerKeydown(input, 'ArrowDown')
         await waitForAnimationFrame()
 
-        assert.equal(option1.getAttribute('aria-selected'), 'false')
+        assert.equal(option1.getAttribute('aria-selected'), null)
         assert.equal(option2.getAttribute('aria-selected'), 'true')
 
         triggerInput(input, 'z', true)

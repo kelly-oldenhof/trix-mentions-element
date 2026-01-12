@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type TrixAttachment = any
 export type TrixDocument = {toString(): string}
 export type TrixEditor = {
@@ -88,6 +89,7 @@ export function buildTrixAttachment(elementOrOptions: HTMLElement | Record<strin
   if (elementOrOptions instanceof HTMLElement) {
     const element = elementOrOptions
 
+    // eslint-disable-next-line github/no-inner-html
     const defaults = {content: element.innerHTML}
     const options = getJSONAttribute(element, attribute)
     const overrides: Record<string, unknown> = {}

@@ -99,7 +99,7 @@ class TrixMentionsExpander {
     } else {
       this.expander.append(menu)
     }
-    this.combobox = new Combobox((this.input.element as unknown) as HTMLTextAreaElement, menu)
+    this.combobox = new Combobox(this.input.element as unknown as HTMLTextAreaElement, menu)
     this.input.setAttribute('role', 'combobox')
     this.input.setAttribute('aria-multiline', 'false')
 
