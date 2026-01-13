@@ -5,7 +5,7 @@ import {
   TrixEditorInput,
   TrixEditorElementAdapter,
   assertTrixEditorElement,
-  buildTrixAttachment
+  buildTrixAttachment,
 } from './trix-editor-element'
 import {getFrameElementById, setSearchParam} from './turbo'
 
@@ -163,7 +163,7 @@ class TrixMentionsExpander {
 
     this.deactivate()
     this.input.focus({
-      preventScroll: true
+      preventScroll: true,
     })
 
     this.lookBackIndex = cursor
@@ -221,7 +221,7 @@ class TrixMentionsExpander {
       const found = query(text, key, cursor, {
         multiWord,
         lookBackIndex: this.lookBackIndex,
-        lastMatchPosition: this.match ? this.match.position : null
+        lastMatchPosition: this.match ? this.match.position : null,
       })
       if (found) {
         return {text: found.text, key, position: found.position}
@@ -233,7 +233,7 @@ class TrixMentionsExpander {
     const providers: Array<Promise<Result> | Result> = []
     const provide = (result: Promise<Result> | Result) => providers.push(result)
     const canceled = !this.expander.dispatchEvent(
-      new CustomEvent('trix-mentions-change', {cancelable: true, detail: {provide, text: match.text, key: match.key}})
+      new CustomEvent('trix-mentions-change', {cancelable: true, detail: {provide, text: match.text, key: match.key}}),
     )
     if (canceled) return
 

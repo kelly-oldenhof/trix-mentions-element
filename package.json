@@ -30,21 +30,22 @@
   ],
   "prettier": "@github/prettier-config",
   "dependencies": {
-    "@github/combobox-nav": "^2.0.2",
+    "@github/combobox-nav": "^2.3.1",
     "trix": "^2.1.16"
   },
   "devDependencies": {
-    "@github/prettier-config": "0.0.4",
-    "chai": "^4.3.4",
+    "@github/prettier-config": "0.0.6",
+    "@types/node": "^20.0.0",
+    "chai": "^4.5.0",
     "chromium": "^3.0.3",
     "eslint": "^8.0.0",
-    "eslint-plugin-github": "^4.1.3",
+    "eslint-plugin-github": "^5.0.0",
     "karma": "^6.4.4",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.2.0",
     "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
-    "mocha": "^11.1.0",
+    "mocha": "^11.7.5",
     "rollup": "^2.79.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "typescript": "^5.0.0"

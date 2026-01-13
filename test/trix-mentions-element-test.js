@@ -33,9 +33,9 @@ describe('trix-mentions element', function () {
         [
           {key: ':', multiWord: false},
           {key: '@', multiWord: false},
-          {key: '[[', multiWord: false}
+          {key: '[[', multiWord: false},
         ],
-        expander.keys
+        expander.keys,
       )
     })
 
@@ -207,9 +207,9 @@ describe('trix-mentions element', function () {
         [
           {key: '@', multiWord: false},
           {key: '#', multiWord: true},
-          {key: '[[', multiWord: true}
+          {key: '[[', multiWord: true},
         ],
-        expander.keys
+        expander.keys,
       )
     })
 

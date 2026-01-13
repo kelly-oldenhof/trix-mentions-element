@@ -19,8 +19,8 @@ export default function query(
   {multiWord, lookBackIndex, lastMatchPosition}: QueryOptions = {
     multiWord: false,
     lookBackIndex: 0,
-    lastMatchPosition: null
-  }
+    lastMatchPosition: null,
+  },
 ): Query | void {
   // Activation key not found in front of the cursor.
   let keyIndex = text.lastIndexOf(key, cursor - 1)
@@ -62,6 +62,6 @@ export default function query(
   const queryString = text.substring(keyIndex + key.length, cursor)
   return {
     text: queryString,
-    position: keyIndex + key.length
+    position: keyIndex + key.length,
   }
 }

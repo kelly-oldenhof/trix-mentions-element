@@ -20,7 +20,7 @@ export class WrapperComponent extends HTMLElement {
       suggestions.insertAdjacentHTML(
         'afterbegin',
         `<li role="option" data-value="a">a</li>
-         <li role="option" data-value="aa">aa</li>`
+         <li role="option" data-value="aa">aa</li>`,
       )
       provide(Promise.resolve({matched: true, fragment: suggestions}))
     })
